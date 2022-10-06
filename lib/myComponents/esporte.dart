@@ -7,15 +7,17 @@ class Esporte {
   Esporte(this.name, this.qntMembers);
 
   static Widget criarColuna(List<Esporte> entries){
-    List<Container> filhos=[];
+    List<GestureDetector> filhos=[];
 
     for (int i=0; i<entries.length; i++){
-      filhos.add(Container(height: 50,
-          color: Colors.red[entries[i].qntMembers],
-          child: Center(child: Text(entries[i].name))
+      filhos.add(
+        GestureDetector(
+          child: Container(height: 50,
+            color: Colors.red[entries[i].qntMembers],
+            child: Center(child: Text(entries[i].name)))
         )
       );
     }
-    return Column(children: filhos,);
+    return Column(children: filhos, );
   }
 }
