@@ -1,6 +1,6 @@
-# untitled
+# 📱 Projeto Flutter - Mobile 📱
 
-A new Flutter project.
+Um projeto feito para a disciplina de Desenvolvimento Mobile 1 - Unitins.
 
 ## Getting Started
 
